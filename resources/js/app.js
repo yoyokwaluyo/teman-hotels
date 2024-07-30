@@ -124,19 +124,19 @@ let home = {
         }
     },
     clickTarget: function () {
-        let btnSubscription = document.querySelectorAll(".btn-subscription");
+        // let btnSubscription = document.querySelectorAll(".btn-subscription");
         let btnDiscuss = document.querySelectorAll(".btn-discuss");
 
-        btnSubscription.forEach((element) => {
-            element.addEventListener("click", function () {
-                $("html, body").animate(
-                    {
-                        scrollTop: $("#content-subscription").offset().top,
-                    },
-                    1500
-                );
-            });
-        });
+        // btnSubscription.forEach((element) => {
+        //     element.addEventListener("click", function () {
+        //         $("html, body").animate(
+        //             {
+        //                 scrollTop: $("#content-subscription").offset().top,
+        //             },
+        //             1500
+        //         );
+        //     });
+        // });
 
         btnDiscuss.forEach((element) => {
             element.addEventListener("click", function () {

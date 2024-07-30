@@ -79,7 +79,7 @@ class HomeController extends Controller
                 'subscribtion' => 'Rp 4.600.000',
                 'trx_admin' => 'Rp 1.090.000',
                 'trx_rate' => 'Rp 5.000',
-                'offering' => 'Free 1x Training',
+                'offering' => 'Free 1x Training *',
                 'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
             ],
             [
@@ -87,7 +87,7 @@ class HomeController extends Controller
                 'subscribtion' => 'Rp 5.250.000',
                 'trx_admin' => 'Rp 1.190.000',
                 'trx_rate' => 'Rp 5.000',
-                'offering' => 'Free Training (1x / Month)',
+                'offering' => 'Free Training (1x / Month) *',
                 'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
             ],
             [
@@ -95,7 +95,7 @@ class HomeController extends Controller
                 'subscribtion' => 'Rp 5.900.000',
                 'trx_admin' => 'Rp 1.390.000',
                 'trx_rate' => 'Rp 5.000',
-                'offering' => 'Free Training (1x / Month)',
+                'offering' => 'Free Training (1x / Month) *',
                 'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
             ],
             [
@@ -103,7 +103,7 @@ class HomeController extends Controller
                 'subscribtion' => 'Rp 6.600.000',
                 'trx_admin' => 'Rp 1.490.000',
                 'trx_rate' => 'Rp 5.000',
-                'offering' => 'Free Training (1x / Month)',
+                'offering' => 'Free Training (1x / Month) *',
                 'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
             ],
         ];

@@ -20,7 +20,7 @@
                 <h1 class="text-6xl max-sm:text-5xl font-medium leading-[1.1] max-sm:leading-[1.3] text-white text-center">Best solutions <br>for your hotel bussiness</h1>
             </div>
             <div class="mt-20 text-center">
-                <a href="javascript:void(0);" class="btn-subscription py-4 px-9 rounded-full text-md bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Discuss with us!</a>
+                <a href="javascript:void(0);" class="btn-discuss py-4 px-9 rounded-full text-md bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Discuss with us!</a>
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@
         <div class="w-1/2 max-sm:w-full pl-10 max-sm:pl-3 max-sm:pr-3 max-sm:order-2 max-sm:text-center">
             <h2 class="text-[2.5rem] max-sm:text-3xl leading-[1.1] font-normal">Simple way <br>to analyze your hotel business</h2>
             <div class="mt-14">
-                <a href="javascript:void(0);" class="btn-subscription py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
+                <a href="javascript:void(0);" class="btn-discuss py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
             </div>
         </div>
         <div class="w-1/2 max-sm:w-full max-sm:order-1">
@@ -84,7 +84,7 @@
         <div class="w-1/2 max-sm:w-full pl-10 max-sm:pl-3 max-sm:pr-3 max-sm:text-center">
             <h2 class="text-[2.5rem] max-sm:text-3xl leading-[1.1] font-normal">Fastest & simple way <br>to operate your property</h2>
             <div class="mt-14">
-                <a href="javascript:void(0);" class="btn-subscription py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
+                <a href="javascript:void(0);" class="btn-discuss py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
             </div>
         </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="pl-10 max-sm:pl-3 max-sm:order-2 max-sm:text-center">
             <h2 class="text-[2.5rem] max-sm:text-3xl leading-[1.1] font-normal">All in one sync <br>in every department</h2>
             <div class="mt-14 max-sm:mt-10">
-                <a href="javascript:void(0);" class="btn-subscription py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
+                <a href="javascript:void(0);" class="btn-discuss py-4 px-12 rounded-full text-md font-medium bg-blue-500 text-white hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">Try For Free</a>
             </div>
         </div>
         <div class="max-sm:order-1">
@@ -134,7 +134,7 @@
         <div class="w-1/2 h-full mx-auto grid grid-cols-2 max-sm:grid-cols-1 items-center place-items-center gap-4 mt-14">
             <div class="w-[300px] p-5 rounded-lg shadow-lg bg-gray-100">
                 <div class="text-center">
-                    <h4 class="text-xl font-light">Flexi</h4>
+                    <h4 class="text-xl font-normal">Flexi</h4>
                     <h5 class="text-sm font-light mt-2">Monthly based on transaction</h5>
                     <div class="min-h-[100px] mt-3" id="trx_flexi">
                         <h2 class="text-3xl font-semibold">Rp 390.000</h2>
@@ -168,7 +168,7 @@
             </div>
             <div class="w-[300px] h-full p-5 rounded-lg shadow-lg bg-gray-100">
                 <div class="text-center">
-                    <h4 class="text-xl font-light">Fixed</h4>
+                    <h4 class="text-xl font-normal">Fixed</h4>
                     <h5 class="text-sm font-light mt-2">Monthly based on transaction</h5>
                     <div class="min-h-[100px] mt-3 flex items-center justify-center" id="trx_fixed">
                         <h2 class="text-3xl font-semibold">Rp 1.300.000</h2>
