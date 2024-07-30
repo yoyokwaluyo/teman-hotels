@@ -1,7 +1,6 @@
 "use strict";
 
 import "flowbite";
-// import './bootstrap';
 
 let home = {
     init: function () {
@@ -11,7 +10,7 @@ let home = {
     },
     form: function () {
         const scriptURL =
-            "https://script.google.com/macros/s/AKfycbxURYZeJRsaNwcU0wOPvpagFzugG-R4NrGNWgrDwQtYKSXV7TewSzaEBIpR5TzCU4cu/exec";
+            "https://script.google.com/macros/s/AKfycbyy3GJhAJ1VygSqTPtPjhWpjhxIo5Rqxb5NqoBo75K2j52D-ej5wT6kafh1Del-qx8gCg/exec";
 
         const form = document.forms["form-contactus"];
         const btnSubmit = document.querySelector("#btn-sumbit");
@@ -63,17 +62,66 @@ let home = {
         });
     },
     subscription: function () {
+        let buttonSbs = document.querySelector("#dropdownDefaultButton");
         let btnSbs = document.querySelector("#btn_sbs");
         let listSbs = document.querySelectorAll("#sbs_value li div");
         let dropdown = document.querySelector("#dropdown");
+        let contentFlexi = document.querySelector("#trx_flexi");
+        let contentFixed = document.querySelector("#trx_fixed");
+        let flexiOffering = document.querySelector("#flexi_offering");
+        let fixedOffering = document.querySelector("#fixed_offering");
+
+        buttonSbs.addEventListener("click", function() {
+            dropdown.classList.toggle("hidden");
+            dropdown.classList.toggle("absolute"); 
+            dropdown.classList.toggle("my-2");
+        });
         
-        btnSbs.innerHTML = "1 - 5";
+        btnSbs.innerHTML = "6 - 10";
         listSbs.forEach(element => {
             element.addEventListener("click", function() {
-                btnSbs.innerHTML = `${element.innerHTML}`;
-                dropdown.classList.add('hidden');
+                btnSbs.innerHTML = `${element.innerHTML}`; //set value on buttonSbs
+
+                // close dropdown
+                dropdown.classList.toggle("hidden");
+                dropdown.classList.toggle("absolute"); 
+                dropdown.classList.toggle("my-2");
+
+                // get array data from dropdown
+                var arr = element.getAttribute("data-arr");
+                var arrData = JSON.parse(arr);
+                
+                flexi(arrData);
+                fixed(arrData);
             });
         });
+
+        function flexi(params) {
+            var template1 = `
+                <h2 class="text-3xl font-semibold">${params.trx_admin}</h2>
+                <h2 class="text-3xl font-semibold">+</h2>
+                <h4 class="text-xl font-medium">${params.trx_rate.includes('Call') ? params.trx_rate : params.trx_rate+' / <span class="text-sm font-light">transaction</span>'}</h4>
+            `;
+            contentFlexi.innerHTML = template1;
+
+            var template2 = `
+                <li><i>${params.offering}</i></li>
+                <li><i>${params.note}</i></li>
+            `;
+            flexiOffering.innerHTML = template2;
+        }
+        function fixed(params) {
+            var template = `
+                <h2 class="text-3xl font-semibold">${params.subscribtion}</h2>
+            `;
+            contentFixed.innerHTML = template;
+
+            var template2 = `
+                <li><i>${params.offering}</i></li>
+                <li><i>${params.note}</i></li>
+            `;
+            fixedOffering.innerHTML = template2;
+        }
     },
     clickTarget: function () {
         let btnSubscription = document.querySelectorAll(".btn-subscription");
