@@ -80,7 +80,7 @@ class HomeController extends Controller
                 'trx_admin' => 'Rp 1.090.000',
                 'trx_rate' => 'Rp 5.000',
                 'offering' => 'Free 1x Training *',
-                'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
+                'note' => '* not include accommodation costs yet'
             ],
             [
                 'room' => '101 - 150',
@@ -88,7 +88,7 @@ class HomeController extends Controller
                 'trx_admin' => 'Rp 1.190.000',
                 'trx_rate' => 'Rp 5.000',
                 'offering' => 'Free Training (1x / Month) *',
-                'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
+                'note' => '* not include accommodation costs yet'
             ],
             [
                 'room' => '151 - 200',
@@ -96,7 +96,7 @@ class HomeController extends Controller
                 'trx_admin' => 'Rp 1.390.000',
                 'trx_rate' => 'Rp 5.000',
                 'offering' => 'Free Training (1x / Month) *',
-                'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
+                'note' => '* not include accommodation costs yet'
             ],
             [
                 'room' => '200++',
@@ -104,7 +104,7 @@ class HomeController extends Controller
                 'trx_admin' => 'Rp 1.490.000',
                 'trx_rate' => 'Rp 5.000',
                 'offering' => 'Free Training (1x / Month) *',
-                'note' => 'Biaya Training belum termasuk : Biaya Transport & Penginapan'
+                'note' => '* not include accommodation costs yet'
             ],
         ];
         return view('pages.home', compact('rooms'));

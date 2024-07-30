@@ -134,12 +134,12 @@
         <div class="w-1/2 h-full mx-auto grid grid-cols-2 max-sm:grid-cols-1 items-center place-items-center gap-4 mt-14">
             <div class="w-[300px] p-5 rounded-lg shadow-lg bg-gray-100">
                 <div class="text-center">
-                    <h4 class="text-xl font-normal">Flexi</h4>
+                    <h4 class="text-2xl font-bold">Flexi</h4>
                     <h5 class="text-sm font-light mt-2">Monthly based on transaction</h5>
                     <div class="min-h-[100px] mt-3" id="trx_flexi">
                         <h2 class="text-3xl font-semibold">Rp 390.000</h2>
                         <h2 class="text-3xl font-semibold">+</h2>
-                        <h4 class="text-xl font-medium">Rp 12.500 / <span class="text-sm font-light">transaction</span></h4>
+                        <h4 class="text-xl font-medium">Rp 12.500 / <span class="text-sm font-light"><i>transaction</i></span></h4>
                     </div>
                     <a href="javascript:void(0);" class="btn-discuss mt-6 inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-full hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">
                         <i>Discuss with us</i>
@@ -153,7 +153,7 @@
                         <li class="font-normal">Front desk</li>
                         <li class="font-normal">Insight</li>
                     </ul>
-                    <ul class="text-xs font-light flex flex-col gap-1 mt-2" id="flexi_offering"></ul>
+                    <ul class="text-xs font-light flex flex-col gap-1 mt-1" id="flexi_offering"></ul>
                 </div>
                 <div class="mt-5">
                     <div class="flex gap-1 text-gray-500">
@@ -168,8 +168,8 @@
             </div>
             <div class="w-[300px] h-full p-5 rounded-lg shadow-lg bg-gray-100">
                 <div class="text-center">
-                    <h4 class="text-xl font-normal">Fixed</h4>
-                    <h5 class="text-sm font-light mt-2">Monthly based on transaction</h5>
+                    <h4 class="text-2xl font-bold">Fixed</h4>
+                    <h5 class="text-sm font-light mt-2">Monthly based on room count</h5>
                     <div class="min-h-[100px] mt-3 flex items-center justify-center" id="trx_fixed">
                         <h2 class="text-3xl font-semibold">Rp 1.300.000</h2>
                     </div>
@@ -185,7 +185,7 @@
                         <li class="font-normal">Front desk</li>
                         <li class="font-normal">Insight</li>
                     </ul>
-                    <ul class="text-xs font-light flex flex-col gap-1 mt-2" id="fixed_offering"></ul>
+                    <ul class="text-xs font-light flex flex-col gap-1 mt-1" id="fixed_offering"></ul>
                 </div>
                 <div class="mt-5">
                     <div class="flex gap-1 text-gray-500">
@@ -203,11 +203,11 @@
 </div>
 
 <!-- Form contact us -->
-<div class="py-20 min-h-screen" id="content-contactus">
+<div class="pt-20 pb-0 min-h-screen" id="content-contactus">
     <div class="container mx-auto">
         <h2 class="text-center text-5xl max-sm:text-3xl font-light">Join <span class="font-medium">FREE</span> for 30 days</h2>
 
-        <div class="w-3/5 max-sm:w-11/12 mx-auto grid grid-cols-2 max-sm:grid-cols-1 gap-2 max-sm:gap-14 my-20">
+        <div class="w-3/5 max-sm:w-11/12 mx-auto grid grid-cols-2 max-sm:grid-cols-1 gap-2 max-sm:gap-14 mt-20 mb-10">
             <div class="shadow-md rounded-lg p-8 border">
                 <h4 class="font-medium text-center mb-8">Contact Us</h4>
                 <form name="form-contactus" action="" method="post">
@@ -226,34 +226,35 @@
                     <div class="mb-10">
                         <textarea id="message" name="Message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 focus:pl-5" placeholder="Your message" style="transition: all .25s ease-in;"></textarea>
                     </div>
-                    <div class="">
+                    <div class="text-center">
                         <button type="submit" id="btn-sumbit" class="">
-                            <div id="text-btn" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-3 me-2 mb-2">Send</div>
-                            <div id="loading-btn" class="hidden animate-pulse text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-3 me-2 mb-2">Loading...</div>
+                            <div id="text-btn" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-3.5 me-2 mb-2">Send Message</div>
+                            <div id="loading-btn" class="hidden animate-pulse text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-3.5 me-2 mb-2">Loading...</div>
                         </button>
                     </div>
                 </form>
             </div>
-            <div class="flex items-center justify-center gap-4">
-                <div class="flex justify-center items-center flex-col gap-4">
-                    <a href="tel:6281219893322" target="_blank">
-                        <i class='bx bx-mobile text-4xl text-blue-500'></i>
+            <div class="flex items-center justify-center flex-col gap-14">
+                <div class="text-center">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('images/logo-color.png') }}" alt="Logo Teman Hotels" class="mx-auto h-16">
                     </a>
-                    <span class="text-sm text-gray-600">(+62) 81219893322</span>
                 </div>
-                <div class="flex justify-center items-center flex-col gap-4">
-                    <a href="mailto:marketing@temanhotel.com" target="_blank">
-                        <i class='bx bx-envelope text-4xl text-blue-500'></i>
-                    </a>
-                    <span class="text-sm text-gray-600">marketing@temanhotel.com</span>
+                <div class="flex items-center justify-center gap-4">
+                    <div class="flex justify-center items-center flex-col gap-4">
+                        <a href="tel:6281219893322" target="_blank">
+                            <i class='bx bx-mobile text-4xl text-blue-500'></i>
+                        </a>
+                        <span class="text-sm text-gray-600">(+62) 81219893322</span>
+                    </div>
+                    <div class="flex justify-center items-center flex-col gap-4">
+                        <a href="mailto:marketing@temanhotel.com" target="_blank">
+                            <i class='bx bx-envelope text-4xl text-blue-500'></i>
+                        </a>
+                        <span class="text-sm text-gray-600">marketing@temanhotel.com</span>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div>
-            <a href="{{ route('home') }}">
-                <img src="{{ asset('images/logo-color.png') }}" alt="Logo Teman Hotels" class="mx-auto h-16">
-            </a>
         </div>
     </div>
 </div>

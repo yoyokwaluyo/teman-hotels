@@ -27,12 +27,28 @@
     <div class="flex flex-col justify-between min-h-screen max-h-[900px] pt-20 pb-10">
         <div class="text-center">
             <h2 class="text-8xl max-sm:text-5xl font-sansita font-semibold text-gray-600">Thank You!</h2>
-            <p class="text-2xl max-sm:text-xl max-sm:leading-[1.7] font-medium mt-14 text-gray-600">Teman Hotel team member will be in contact within the next <br> business day to discuss your needs and set up your account</p>
+            <p class="text-2xl max-sm:text-xl max-sm:leading-[1.7] font-medium mt-14 text-gray-600">We look forward <br> to meeting you soon...</p>
         </div>
-        <div>
-            <a href="{{ route('home') }}">
-                <img src="{{ asset('images/logo-color.png') }}" alt="Logo Teman Hotels" class="mx-auto h-16">
-            </a>
+        <div class="flex items-center justify-center flex-col gap-14">
+            <div class="text-center">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/logo-color.png') }}" alt="Logo Teman Hotels" class="mx-auto h-16">
+                </a>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <div class="flex justify-center items-center flex-col gap-4">
+                    <a href="tel:6281219893322" target="_blank">
+                        <i class='bx bx-mobile text-4xl text-blue-500'></i>
+                    </a>
+                    <span class="text-sm text-gray-600">(+62) 81219893322</span>
+                </div>
+                <div class="flex justify-center items-center flex-col gap-4">
+                    <a href="mailto:marketing@temanhotel.com" target="_blank">
+                        <i class='bx bx-envelope text-4xl text-blue-500'></i>
+                    </a>
+                    <span class="text-sm text-gray-600">marketing@temanhotel.com</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
