@@ -50,8 +50,8 @@
         <div class="text-center min-w-[250px]">
             <img src="{{ asset('images/feature-3.png') }}" alt="features 1" class="h-[3.5rem] mx-auto">
             <div class="mt-4 px-8">
-                <h5 class="mb-3 font-medium">Cloud based system</h5>
-                <p class="font-light text-[14px]">Our cloud-based system ensures data security and accessibility.</p>
+                <h5 class="mb-3 font-medium">Reference Oriented</h5>
+                <p class="font-light text-[14px]">Personalized make customer more pleasurable</p>
             </div>
         </div>
         <div class="text-center min-w-[250px]">
