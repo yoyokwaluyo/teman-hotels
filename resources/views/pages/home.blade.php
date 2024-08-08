@@ -139,7 +139,7 @@
                     <div class="min-h-[100px] mt-3" id="trx_flexi">
                         <h2 class="text-3xl font-semibold">Rp 390.000</h2>
                         <h2 class="text-3xl font-semibold">+</h2>
-                        <h4 class="text-xl font-medium">Rp 12.500 / <span class="text-sm font-light"><i>transaction</i></span></h4>
+                        <h4 class="text-xl font-medium">Rp 12.500 / <span class="text-sm font-light"><i>room night</i></span></h4>
                     </div>
                     <a href="javascript:void(0);" class="btn-discuss mt-6 inline-flex items-center px-6 py-2 text-sm font-medium text-center text-white bg-blue-500 rounded-full hover:bg-blue-600 transition duration-150 ease-out hover:ease-in">
                         <i>Discuss with us</i>

@@ -100,7 +100,7 @@ let home = {
             var template1 = `
                 <h2 class="text-3xl font-semibold">${params.trx_admin}</h2>
                 <h2 class="text-3xl font-semibold">+</h2>
-                <h4 class="text-xl font-medium">${params.trx_rate.includes('Call') ? params.trx_rate : params.trx_rate+' / <span class="text-sm font-light"><i>transaction</i></span>'}</h4>
+                <h4 class="text-xl font-medium">${params.trx_rate.includes('Call') ? params.trx_rate : params.trx_rate+' / <span class="text-sm font-light"><i>room night</i></span>'}</h4>
             `;
             contentFlexi.innerHTML = template1;
 
@@ -117,8 +117,8 @@ let home = {
             contentFixed.innerHTML = template;
 
             var template2 = `
-                <li class="font-normal">${params.offering}</li>
-                <li><small><i>${params.note}</i></small></li>
+                <li class="font-normal">&nbsp;</li>
+                <li><small><i>&nbsp;</i></small></li>
             `;
             fixedOffering.innerHTML = template2;
         }
